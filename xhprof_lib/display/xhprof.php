@@ -761,7 +761,7 @@ function sortCalls($a, $b) {
 }
 
 function sortCPU($a, $b) {
-	if (empty($excl_cpu) || empty($b['exlc_cpu'])) {
+	if (empty($a['excl_cpu']) || empty($b['exlc_cpu'])) {
 		return false;
 	}
 	if ($a['excl_cpu'] === $b['excl_cpu']) {
